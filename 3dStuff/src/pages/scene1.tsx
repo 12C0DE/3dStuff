@@ -4,23 +4,16 @@ import { Cube } from "../components/index";
 export const Scene1 = () => {
   return (
     <>
-      <h1>Scene 1 </h1>
+      <h1>Scene 1</h1>
       <Canvas>
         <directionalLight position={[0, 0, 2]} />
-        {/* everthing within the MESH is the cube */}
-        <Cube position={[1, 0, 0]} size={[1, 1, 1]} color={"green"} />
-        {/* <mesh position={[-1, 0, 0]}>
-          <boxGeometry />
-          <meshStandardMaterial color="orange" />
-        </mesh>
-        <mesh position={[-1, 2, 0]}>
-          <boxGeometry />
-          <meshStandardMaterial color="orange" />
-        </mesh>
-        <mesh position={[1, 2, 0]}>
-          <boxGeometry />
-          <meshStandardMaterial color="orange" />
-        </mesh> */}
+        <ambientLight />
+        <group position={[1, 1, 0]}>
+          <Cube position={[0, 0, 0]} size={[1, 1, 1]} color={"green"} />
+          <Cube position={[0, -2, 0]} size={[1, 1, 1]} color={"hotpink"} />
+          <Cube position={[-2, 0, 0]} size={[1, 1, 1]} color={"blue"} />
+          <Cube position={[-2, -2, 0]} size={[1, 1, 1]} color={"red"} />
+        </group>
       </Canvas>
     </>
   );

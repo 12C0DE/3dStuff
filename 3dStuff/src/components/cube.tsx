@@ -9,6 +9,7 @@ export const Cube = ({
 }) => {
   return (
     <mesh position={position}>
+      {/* everthing within the MESH is the cube */}
       <boxGeometry args={size} />
       <meshStandardMaterial color={color} />
     </mesh>
