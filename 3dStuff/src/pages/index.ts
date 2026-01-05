@@ -1,3 +1,7 @@
 export * from "./home";
 export * from "./scene1";
 export * from "./animateShape";
+export * from './InteractPage'
+export * from "./SpherePage";
+export * from "./TorusPage";
+export * from "./TorusKnotPage";
