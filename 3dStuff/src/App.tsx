@@ -1,6 +1,6 @@
 import "./App.css";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import { Home, Scene1 } from "./pages/index";
+import { AnimateShape, Home, Scene1 } from "./pages/index";
 import { Header } from "./components/index";
 
 function App() {
@@ -11,6 +11,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/scene1" element={<Scene1 />} />
+          <Route path="/animate1" element={<AnimateShape />} />
         </Routes>
       </BrowserRouter>
     </>

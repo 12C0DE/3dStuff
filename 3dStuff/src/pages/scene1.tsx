@@ -4,7 +4,7 @@ import { Cube } from "../components/index";
 export const Scene1 = () => {
   return (
     <>
-      <h1>Scene 1</h1>
+      <h1>Cubes</h1>
       <Canvas>
         <directionalLight position={[0, 0, 2]} />
         <ambientLight />
