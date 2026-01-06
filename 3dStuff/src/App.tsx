@@ -1,6 +1,16 @@
 import "./App.css";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import { AnimateShape, InteractPage, Home, Scene1, SpherePage, TorusPage, TorusKnotPage } from "./pages/index";
+import {
+  AnimateShape,
+  InteractPage,
+  Home,
+  Scene1,
+  SpherePage,
+  TorusPage,
+  TorusKnotPage,
+  IntTorusKnotPage,
+  WobbleTorusKnotPage,
+} from "./pages/index";
 import { Header } from "./components/index";
 
 function App() {
@@ -16,6 +26,8 @@ function App() {
           <Route path="/torus" element={<TorusPage />} />
           <Route path="/torusKnot" element={<TorusKnotPage />} />
           <Route path="/interact" element={<InteractPage />} />
+          <Route path="/intTorusKnot" element={<IntTorusKnotPage />} />
+          <Route path="/wobbleTorusKnot" element={<WobbleTorusKnotPage />} />
         </Routes>
       </BrowserRouter>
     </>
